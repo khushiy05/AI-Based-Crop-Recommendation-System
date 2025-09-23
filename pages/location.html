@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allow Location</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="location-container">
+    <div class="location-card">
+      <div class="icon-wrapper">📍</div>
+      <h2>Allow Location Access</h2>
+      <p>
+        We use your location to give <strong>smart crop recommendations</strong> 
+        and farming advice tailored to your area.
+      </p>
+      <button onclick="getLocation()">Allow Location</button>
+    </div>
+  </div>
+
+  <script>
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((pos) => {
+          localStorage.setItem("hasLocation", true);
+          localStorage.setItem("location", JSON.stringify({
+            lat: pos.coords.latitude,
+            lng: pos.coords.longitude
+          }));
+          window.location.href = "services.html"; // after location → go to services
+        });
+      } else {
+        alert("Geolocation not supported!");
+      }
+    }
+  </script>
+</body>
+</html>
