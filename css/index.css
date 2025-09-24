@@ -5,18 +5,86 @@ body {
   padding: 15px 0;
 }
 
+
 .heading-bar {
   width: 100%;
   text-align: center;
-  padding: 30px 0; /* more space for a big heading */
-  border-bottom: 5px solid #1b5e20; /* dark green border */
-  background: linear-gradient(to right, #4caf50, #2e7d32); /* full width background */
+  padding: 20px 0;
+  border-bottom: 5px solid #1b5e20;
+  background: linear-gradient(to right, #4caf50, #2e7d32);
+  position: sticky;   
+  top: 0;             
+  z-index: 1000;      
 }
 
 .heading-bar h1 {
-  font-size: 3.5rem; /* BIG text */
+  font-size: 3rem;
   font-weight: bold;
   margin: 0;
-  color: #fff; /* white text */
-  letter-spacing: 2px; /* spacing for style */
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+
+.home-description {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f1f8e9;
+  border-left: 6px solid #2e7d32;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-description h2 {
+  font-size: 2.2rem;
+  color: #1b5e20;
+  margin-bottom: 15px;
+}
+
+.home-description p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.home-description ul {
+  margin: 15px 0 20px 20px;
+  font-size: 1.05rem;
+}
+
+.home-description li {
+  margin-bottom: 8px;
+}
+
+
+.get-started {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.get-started .btn {
+  display: inline-block;
+  padding: 14px 35px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #43a047, #1b5e20);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.get-started .btn:hover {
+  background: linear-gradient(to right, #2e7d32, #1b5e20);
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
