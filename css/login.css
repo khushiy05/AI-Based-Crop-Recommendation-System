@@ -1,74 +1,92 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #00cc99 0%, #00cc66 100%);
+  font-family: Arial, sans-serif;
+  background: #f0fff4;
+  margin: 0;
+  padding: 20px;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.profile-header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #2e7d32, #43a047);
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+}
+
+.profile-info h2 {
   margin: 0;
 }
 
-
-.login {
-  background: #ffffff;
-  padding: 45px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-  width: 350px;
-  text-align: center;
-}
-
-
-.login h1 {
-  color: white;
-  margin-bottom: 10px;
-  text-align: center;
-  padding: 15px; 
-  border-radius: 8px 8px 0 0; 
-  margin: -20px -20px 20px -20px;
-  background-color: #2d8659;
-}
-
-
-.login label {
-  display: block;
-  margin-top: 15px;
-  text-align: left;
-  font-weight: 600;
+.edit-btn {
+  background: white;
   color: #2e7d32;
-}
-
-
-.login input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border: 2px solid #81c784;
-  border-radius: 8px;
-  outline: none;
-  transition: 0.3s;
-}
-
-.login input:focus {
-  border-color: #2e7d32;
-  box-shadow: 0 0 8px #81c784;
-}
-
-
-.login button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  background: #2e7d32;
-  color: white;
   border: none;
+  padding: 10px 18px;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 20px;
-  transition: 0.3s;
+  font-weight: bold;
 }
 
-.login button:hover {
-  background: #1b5e20;
-  transform: scale(1.05);
+.edit-btn:hover {
+  background: #e8f5e9;
+}
+
+.profile-form {
+  padding: 20px;
+}
+
+.profile-form h3 {
+  color: #2e7d32;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.form-group input, .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #2e7d32;
+  outline: none;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
 }
