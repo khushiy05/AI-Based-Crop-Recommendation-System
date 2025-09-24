@@ -3,7 +3,7 @@ body {
   background: linear-gradient(to right, #e8f5e9, #f0fff4);
   margin: 0;
   text-align: center;
-  padding: 40px 0;
+  padding: 15px 0;
 }
 
 .main-box {
@@ -17,7 +17,7 @@ h1 {
   color: #2e7d32;
   font-weight: bold;
   font-size: 32px;
-  margin-bottom: 20px;
+  margin-bottom: 15px; 
 }
 
 .data-container {
@@ -27,7 +27,6 @@ h1 {
   box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   width: 500px;
   margin: 0 auto;
-  
 }
 
 .data-container h3 {
