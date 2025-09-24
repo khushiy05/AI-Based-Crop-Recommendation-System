@@ -6,20 +6,28 @@ body {
   padding: 40px 0;
 }
 
+.main-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 40px; 
+}
+
 h1 {
   color: #2e7d32;
   font-weight: bold;
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .data-container {
   background: #ffffff;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
   width: 500px;
   margin: 0 auto;
+  
 }
 
 .data-container h3 {
@@ -53,4 +61,82 @@ button:hover {
   color: white;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+
+.card {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 550px;
+  margin: 0 auto;   
+  text-align: left; 
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+  text-align: center; /* title stays centered */
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #4caf50;
+}
+
+.unit {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #666;
+}
+
+.btn-container {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.btn {
+  background: #2e7d32;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #24914c;
 }
