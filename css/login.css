@@ -18,15 +18,15 @@ body {
   text-align: center;
 }
 
-.login h1 {
-  color: #2e7d32;
-  margin-bottom: 10px;
-}
 
-.login h3 {
-  color: #388e3c;
-  margin-bottom: 20px;
-  font-weight: normal;
+.login h1 {
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px; 
+  border-radius: 8px 8px 0 0; 
+  margin: -20px -20px 20px -20px;
+  background-color: #2d8659;
 }
 
 
